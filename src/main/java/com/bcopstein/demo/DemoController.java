@@ -75,7 +75,7 @@ public class DemoController{
                .toList();
     }
 
-    /*@GetMapping("/livrosporautor/{autor}/ano/{ano}")
+    @GetMapping("/livrosporautor/{autor}/ano/{ano}")
     @CrossOrigin(origins = "*")
     public List<Livro> getLivrosPorAutor(@PathVariable(value = "autor") String autor,
                                         @PathVariable(value = "ano") int ano) {
@@ -83,7 +83,7 @@ public class DemoController{
                .filter(livro -> livro.getAutor().equals(autor))
                .filter(livro -> livro.getAno() == ano)
                .toList();
-    }*/
+    } 
 
     @GetMapping("/livrosPorTitulo")
     @CrossOrigin(origins = "*")
